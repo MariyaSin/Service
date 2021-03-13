@@ -1,4 +1,4 @@
-﻿using Service.Repository;
+﻿using Service.Models;
 using System;
 
 namespace Broker.Models.Requests

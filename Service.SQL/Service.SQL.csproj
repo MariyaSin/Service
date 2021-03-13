@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Service.ModeldsDB\Service.ModeldsDB.csproj" />
+    <ProjectReference Include="..\Service.ModeldsDB\Service.ModelsDB.csproj" />
   </ItemGroup>
 
 </Project>

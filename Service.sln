@@ -5,15 +5,15 @@ VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "Service\Service.csproj", "{CFC77B46-F7E2-4953-9F55-4692C326F97A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service.Repository", "Service.Repository\Service.Repository.csproj", "{BC579F4A-1C97-4200-B413-8BBD97F30ED3}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service.ModeldsDB", "Service.ModeldsDB\Service.ModeldsDB.csproj", "{ADF82966-47ED-4CFE-9FE8-2353AC858ACD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service.ModelsDB", "Service.ModeldsDB\Service.ModelsDB.csproj", "{ADF82966-47ED-4CFE-9FE8-2353AC858ACD}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service.SQL", "Service.SQL\Service.SQL.csproj", "{B5636907-6F1A-4D06-97E4-D5BB858E01F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service.Broker.Models", "Service.Broker.Models\Service.Broker.Models.csproj", "{994F46ED-3F91-4EF3-8B06-3F84D4FF700A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service.Broker.Models", "Service.Broker.Models\Service.Broker.Models.csproj", "{994F46ED-3F91-4EF3-8B06-3F84D4FF700A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service.Broker.Command", "Service.Broker.Command\Service.Broker.Command.csproj", "{BC3983A7-FE1B-4D4C-A2F2-8021E9B8F675}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service.Broker.Command", "Service.Broker.Command\Service.Broker.Command.csproj", "{BC3983A7-FE1B-4D4C-A2F2-8021E9B8F675}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service.Models", "Service.Models\Service.Models.csproj", "{F2122611-C6AE-42C8-8448-41C078068A40}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +25,6 @@ Global
 		{CFC77B46-F7E2-4953-9F55-4692C326F97A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFC77B46-F7E2-4953-9F55-4692C326F97A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFC77B46-F7E2-4953-9F55-4692C326F97A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BC579F4A-1C97-4200-B413-8BBD97F30ED3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BC579F4A-1C97-4200-B413-8BBD97F30ED3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BC579F4A-1C97-4200-B413-8BBD97F30ED3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BC579F4A-1C97-4200-B413-8BBD97F30ED3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{ADF82966-47ED-4CFE-9FE8-2353AC858ACD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{ADF82966-47ED-4CFE-9FE8-2353AC858ACD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADF82966-47ED-4CFE-9FE8-2353AC858ACD}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,6 +41,10 @@ Global
 		{BC3983A7-FE1B-4D4C-A2F2-8021E9B8F675}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC3983A7-FE1B-4D4C-A2F2-8021E9B8F675}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC3983A7-FE1B-4D4C-A2F2-8021E9B8F675}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2122611-C6AE-42C8-8448-41C078068A40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2122611-C6AE-42C8-8448-41C078068A40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2122611-C6AE-42C8-8448-41C078068A40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2122611-C6AE-42C8-8448-41C078068A40}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

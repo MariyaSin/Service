@@ -44,6 +44,7 @@ namespace Service
             services.AddMassTransit(x =>
             {
                 x.AddConsumer<PostUserConsumer>();
+                x.AddConsumer<GetAllUsersConsumer>();
                 x.UsingRabbitMq((context, cfg) =>
                 {
                     cfg.Host("localhost", "/", host =>
@@ -51,7 +52,8 @@ namespace Service
                         host.Username("server1");
                         host.Password("server1");
                     });
-                    cfg.ReceiveEndpoint("server1", ep => ep.ConfigureConsumer<PostUserConsumer>(context));
+                    cfg.ReceiveEndpoint("server1Post", ep => ep.ConfigureConsumer<PostUserConsumer>(context));
+                    cfg.ReceiveEndpoint("server1Get", ep => ep.ConfigureConsumer<GetAllUsersConsumer>(context));
                 });
 
             });

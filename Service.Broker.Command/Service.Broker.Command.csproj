@@ -6,7 +6,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Service.Broker.Models\Service.Broker.Models.csproj" />
-    <ProjectReference Include="..\Service.ModeldsDB\Service.ModeldsDB.csproj" />
+    <ProjectReference Include="..\Service.ModeldsDB\Service.ModelsDB.csproj" />
+    <ProjectReference Include="..\Service.Models\Service.Models.csproj" />
     <ProjectReference Include="..\Service.SQL\Service.SQL.csproj" />
   </ItemGroup>
 
