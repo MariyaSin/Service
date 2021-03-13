@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Service.Broker.Command\Service.Broker.Command.csproj" />
     <ProjectReference Include="..\Service.Broker.Models\Service.Broker.Models.csproj" />
     <ProjectReference Include="..\Service.SQL\Service.SQL.csproj" />
   </ItemGroup>

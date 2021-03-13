@@ -11,7 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using Service.Broker.Models.consumer;
+using Service.Broker.Command;
 using Service.SQL;
 using System;
 using System.Collections.Generic;
@@ -43,7 +43,7 @@ namespace Service
 
             services.AddMassTransit(x =>
             {
-                x.AddConsumer<UserConsumer>();
+                x.AddConsumer<PostUserConsumer>();
                 x.UsingRabbitMq((context, cfg) =>
                 {
                     cfg.Host("localhost", "/", host =>
@@ -51,7 +51,7 @@ namespace Service
                         host.Username("server1");
                         host.Password("server1");
                     });
-                    cfg.ReceiveEndpoint("server1", ep => ep.ConfigureConsumer<UserConsumer>(context));
+                    cfg.ReceiveEndpoint("server1", ep => ep.ConfigureConsumer<PostUserConsumer>(context));
                 });
 
             });
